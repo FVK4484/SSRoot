@@ -3,6 +3,9 @@
 #include <stdio.h>
 #include <locale.h>
 
+void HolaMundo();
+
+
 int main(int argc, char* argv[], char* envp[])
 {
 	// Necesario para imprimir caracteres específicos del español
