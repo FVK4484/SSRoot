@@ -1,0 +1,18 @@
+# Carpeta de trabajo de Software de Sistemas. Generado por SS010-Init.bat.
+# Se ignora la salida de compilacion: ocupa mucho y se regenera sola.
+.vs/
+ipch/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+Win32/
+*.obj
+*.pdb
+*.ilk
+*.tlog
+*.lastbuildstate
+# Configuracion propia de este equipo: no debe viajar en las copias.
+SS-Config.cmd
+# NO se ignora *.vcxproj.user: la Practica 0 lo estudia y guarda las
+# opciones de depuracion (Anexo F).
