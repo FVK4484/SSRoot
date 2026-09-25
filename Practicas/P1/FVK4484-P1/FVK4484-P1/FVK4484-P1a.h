@@ -1,6 +1,2 @@
-#ifndef FVK4484_P1A_H
-#define FVK4484_P1A_H
-
-int ImprimeBinario(int valor, int bits);
-
-#endif // FVK4484_P1A_H
+size_t ImprimeBinario(int valor, int bits);
+size_t ImprimeBinario(char* buffer, size_t tamBuffer, int valor, int bits);
