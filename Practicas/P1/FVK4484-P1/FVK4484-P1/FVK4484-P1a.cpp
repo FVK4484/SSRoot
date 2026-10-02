@@ -25,9 +25,9 @@ size_t ImprimeBinario(char* buffer, size_t tamBuffer, int valor, int bits)
 			"%d", (valor >> i) & 1);
 		// Imprime un espacio para separar cada nibble
 		if ((i % 4) == 0)
-			snprintf(buffer + len, tamBuffer - len, " ");
+			len += snprintf(buffer + len, tamBuffer - len, " ");
 		if ((i % 8) == 0)
-			snprintf(buffer + len, tamBuffer - len, " ");
+			len += snprintf(buffer + len, tamBuffer - len, " ");
 	}
 	return len;
 }

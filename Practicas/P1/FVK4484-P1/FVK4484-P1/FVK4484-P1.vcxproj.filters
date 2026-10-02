@@ -5,6 +5,9 @@
     <ClCompile Include="FVK4484-P1a.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FVK4484-P1a.h" />
+    <ClInclude Include="FVK4484-P1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="prueba.bin" />
   </ItemGroup>
 </Project>
