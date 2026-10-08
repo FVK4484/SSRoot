@@ -18,10 +18,10 @@ int main(int argc, char* argv[], char* envp[])
 	setlocale(LC_ALL, "Spanish"); // Necesita #include <locale.h>
 
 	//->aquí va el código inicial de la práctica
-	//Ej1_Inicial();
-	//Ej1_LosFloatsNoSonReales();
-	//Ej1_InicialCorregido();
-	//Ej1_InicialMasRapido();
+	Ej1_Inicial();
+	Ej1_LosFloatsNoSonReales();
+	Ej1_InicialCorregido();
+	Ej1_InicialMasRapido();
 	Eje1_DumpbinAntesDeEmpezar("prueba.bin");
 
 	printf("\nPor favor, pulse la tecla ENTRAR para terminar ...\n");
@@ -30,7 +30,6 @@ int main(int argc, char* argv[], char* envp[])
 	return 0;
 }
 
-/*
 // Copiar esto al mismo archivo donde está main
 #define NRO_BYTES sizeof(i)
 void Ej1_Inicial() {
@@ -101,7 +100,6 @@ void Ej1_InicialMasRapido() {
 	printf(__FUNCTION__ ": Tiempo de ejecución: %.3f ms\n", milisegundos);
 	printf("Tamaño de i: %d bytes\n", NRO_BYTES);
 }
-*/
 
 // ------------------------------------------------------------------
 // Sesión 2: matrices C y archivos
