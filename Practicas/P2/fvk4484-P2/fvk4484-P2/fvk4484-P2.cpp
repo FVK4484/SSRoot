@@ -2,27 +2,34 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <locale.h>
+#include "fvk4484-P2.hpp"
+#include <ctime>
+#include <Windows.h>
 
 void Eje2_Inicial();
 void Ej2_EstructuraEnDisco();
-// void ImprimeLineaHex();
+void Eje2_TestClaseCrono();
 
 int main(int argc, char* argv[], char* envp[])
 {
 	// Necesario para imprimir caracteres específicos del español
 	setlocale(LC_ALL, "Spanish"); // Necesita #include <locale.h>
 
-
 	//->aquí va el código inicial de la práctica
 	// Evitar advertencias de parámetros no usados
+	/*
 	Eje2_Inicial();
 	Ej2_EstructuraEnDisco();
-	// ImprimeLineaHex();
+	*/
+	Eje2_TestClaseCrono();
 
 	printf("\nPor favor, pulse la tecla ENTRAR para terminar ...\n");
 	(void)getchar();  // printf y getchar=> necesitan #include <stdio.h>
 	return 0;
 }
+
+// ------------------------- SESIÓN 1 --------------------------------------------
+
 
 // Copiar esta función al mismo archivo que main, y llamarla desde main
 // Un experimento con estructuras y uniones
@@ -130,4 +137,23 @@ void Ej2_EstructuraEnDisco()  //previo
 	/* el visor hexadecimal de la P1. También puede usar el editor binario de Visual Studio,
 		 ver https://learn.microsoft.com/es-es/cpp/windows/binary-editor?view=msvc-180
 	 */
+}
+
+// ------------------------- SESIÓN 2 --------------------------------------------
+
+void Eje2_TestClaseCrono() {
+	ss::Crono crono();		// Declara un objeto de tipo Crono, pero aun no lo usa
+	/*
+	clock_t inicio = clock();  // inicia medición de tiempo
+
+	Sleep(1200);  // Retraso de 1200 ms (API WIN32)
+	clock_t fin = clock();  // finaliza medición de tiempo
+	double segs = (fin - inicio) / CLOCKS_PER_SEC;
+
+	printf("Han pasado %f segundos.\n", segs);
+	*/
+	ss::Crono Iniciar();
+	Sleep(1200);
+	ss::Crono Parar();
+	ss::Crono Lee();
 }
