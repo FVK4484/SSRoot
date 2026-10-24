@@ -3,7 +3,6 @@
 #include <vector>
 #include <string>
 #include <Windows.h>
-
 #include "Crono.hpp"
 
 using namespace std;
